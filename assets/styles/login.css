@@ -1,0 +1,45 @@
+/* Login styles */
+
+header .login-header {
+    display: flex;
+    justify-content: center;
+}
+
+header .login-header img {
+    width: 120px;
+}
+
+@media screen and (min-width: 920px) {
+    header .login-header img {
+        width: 160px;
+    }
+}
+
+.title--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .main__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .main__login p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .main__login span {
+    font-weight: 800;
+}
+
+main .main__login form {
+
+}
