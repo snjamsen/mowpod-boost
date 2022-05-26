@@ -10,7 +10,7 @@ header .login-header {
 }
 
 header .login-header img {
-    width: 100px;
+    width: 120px;
 }
 
 @media screen and (min-width: 920px) {
@@ -55,6 +55,7 @@ header .login-header img {
 .main__login.container {
     position: relative;
 
+    width: 90%;
     max-width: 650px;
     padding: 20px;
 }
@@ -170,10 +171,30 @@ footer.footer--login {
 
 .main__login .airpod-right {
     top: -50px;
-    right: -120px;
+    right: -100px;
 }
 
 .main__login .airpod-left {
     top: 350px;
-    left: -120px;
+    left: -100px;
+}
+
+@media screen and (max-width: 1020px) {
+    .main__login .airpod-right,
+    .main__login .airpod-left {
+        width: 100px;
+    }
+    .main__login .airpod-right {
+        right: 0;
+    }
+    .main__login .airpod-left {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .main__login .airpod-right,
+    .main__login .airpod-left {
+        display: none;
+    }
 }
