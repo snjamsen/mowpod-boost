@@ -57,7 +57,19 @@ header .login-header img {
 
     width: 90%;
     max-width: 650px;
-    padding: 20px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 400px) {
+    .main__login.container {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .main__login.container {
+        padding: 20px;
+    }
 }
 
 main .main__login {

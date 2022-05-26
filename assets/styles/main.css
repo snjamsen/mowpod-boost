@@ -1008,10 +1008,16 @@ header .header {
     margin: 20px auto;
 }
 
+@media screen and (max-width: 390px) {
+    .submit-button {
+        width: 180px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .submit-button {
         font-size: 18px;
-        width: 220px;
+        width: 200px;
         margin-bottom: 15px;
     }
 }
@@ -1059,6 +1065,12 @@ header .header {
 
 .background__rainbow img.rainbow-first {
     top: 0;
+}
+
+@media screen and (min-width: 1220px) {
+    .background__rainbow img.rainbow-first {
+        top: -50px;
+    }
 }
 
 .background__rainbow img.rainbow-second {
