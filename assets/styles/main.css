@@ -1076,6 +1076,8 @@ header .header {
     background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
+    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
 }
 
 .airpod-right,
