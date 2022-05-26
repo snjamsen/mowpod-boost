@@ -47,6 +47,8 @@ header .login-header img {
 /* Main */
 
 .main__login.container {
+    position: relative;
+
     max-width: 650px;
     padding: 20px;
 }
@@ -67,7 +69,7 @@ main .main__login p {
     justify-self: flex-end;
 
     max-width: 280px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 main .main__login span.welcome {
@@ -126,7 +128,7 @@ main .main__login span.welcome {
 .login-form input {
     font-size: 16px;
 
-    height: 50px;
+    height: 47px;
     padding: 0 10px;
     margin: 5px 0;
 }
@@ -135,6 +137,18 @@ main .main__login span.welcome {
     .login-form input {
         font-size: 18px;
         padding: 0 15px;
+
+        height: 50px;
+    }
+}
+
+.main__login .submit-button {
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 1220px) {
+    .main__login .submit-button {
+        margin: 15px auto;
     }
 }
 
@@ -144,20 +158,16 @@ footer.footer--login {
     top: auto;
 }
 
-.backgrounds--filter::after {
-    content: '';
-    background-color: rgba(37, 37, 37, 50%);
-    filter: contrast(0.5);
-    position: fixed;
-
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    z-index: -1;
-}
-
 .background-sun.background-sun--login {
     top: 0;
+}
+
+.main__login .airpod-right {
+    top: -50px;
+    right: -120px;
+}
+
+.main__login .airpod-left {
+    top: 350px;
+    left: -120px;
 }
