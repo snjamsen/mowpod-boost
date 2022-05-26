@@ -1043,7 +1043,7 @@ header .header {
     position: relative;
 }
 
-.backgrounds--filter::after {
+/* .backgrounds--filter::after {
     content: '';
     background-color: rgba(37, 37, 37, 50%);
     filter: contrast(0.5);
@@ -1055,10 +1055,11 @@ header .header {
     left: 0;
 
     z-index: -1;
-}
+} */
 
 .background__rainbow img {
     width: 100%;
+    min-width: 320px;
     position: absolute;
     z-index: -1;
 }

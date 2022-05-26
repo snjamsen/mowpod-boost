@@ -7,10 +7,38 @@
 header .login-header {
     display: flex;
     justify-content: center;
+
+    width: 100%;
+    min-width: 300px;
+    margin: 15px auto;
+}
+
+@media screen and (min-width: 720px) {
+    header .login-header {
+        display: flex;
+        justify-content: center;
+    
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    header .login-header {
+        display: flex;
+        justify-content: center;
+    
+        margin: 25px auto;
+    }
 }
 
 header .login-header img {
     width: 120px;
+}
+
+@media screen and (min-width: 420px) {
+    header .login-header img {
+        width: 130px;
+    }
 }
 
 @media screen and (min-width: 920px) {
@@ -30,6 +58,8 @@ header .login-header img {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    min-width: 300px;
 }
 
 .title--login h1 {
