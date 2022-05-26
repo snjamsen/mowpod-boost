@@ -19,6 +19,12 @@ header .login-header img {
     }
 }
 
+@media screen and (min-width: 1220px) {
+    header .login-header img {
+        width: 160px;
+    }
+}
+
 .title--login {
     display: flex;
     justify-content: center;
