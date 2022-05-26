@@ -16,21 +16,17 @@ jQuery(document).ready(function($) {
 
 /* Boost calculate */
 let boostResult = document.querySelector('.boost__counter--sum');
-let approxDownloads = document.querySelector('.approx-downloads');
+let boostSum = document.querySelector('.boost-sum');
 let boostValue;
 
 function boostInput(boost) {
     boostValue = +boost.value;
     boost = "$" + Math.floor((+boost.value * 0.8));
     boostResult.innerHTML = boost;
+    boostSum.innerHTML = boost;
+
     console.log(boostValue);
 }
-
-function boostDuration(dur) {
-    dur = Math.floor(boostValue / +dur.value);
-    approxDownloads.innerHTML = dur + " ";
-}
-
 
 // Input title
 let titleLenght = document.querySelector('.title-form__input-title--display');

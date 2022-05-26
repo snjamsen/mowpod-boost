@@ -40,19 +40,49 @@ header .header {
     padding: 0 15px;
 }
 
+.heder--logo {
+    width: 150px;
+}
+
+@media screen and (max-width: 720px) {
+    .heder--logo {
+        width: 100px;
+    }
+}
+
+.header__logout a {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header__logout a:hover {
+    color: #ffffffab;
+}
+
 /* Main */
 
 .main>div {
     background-color: var(--transparent-gray);
     border-radius: 15px;
+
     padding: 35px 55px;
     margin: 10px auto;
     min-width: 300px;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 1074px) {
     .main>div {
         padding: 30px 35px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main>div {
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
 }
 
@@ -429,82 +459,6 @@ header .header {
     .boost__counter--sum br {
         display: inline;
     }
-}
-
-.boost__duration {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    margin: 10px auto;
-}
-
-@media screen and (max-width: 720px) {
-    .boost__duration {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin: 0;
-    }
-}
-
-.boost__duration input {
-    margin: 5px 40px;
-}
-
-@media screen and (max-width: 720px) {
-    .boost__duration input {
-        justify-self: center;
-        margin: 5px 0;
-    }
-}
-
-.boost__duration span {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 25px;
-}
-
-@media screen and (max-width: 920px) {
-    .boost__duration span {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .boost__duration span {
-        font-size: 26px;
-        text-align: center;
-    }
-}
-
-.boost__duration .boost__duration--first-span {
-    justify-self: flex-end;
-}
-
-@media screen and (max-width: 720px) {
-    .boost__duration .boost__duration--first-span {
-        justify-self: center;
-        align-self: flex-end;
-        margin-bottom: 20px;
-    }
-}
-
-.boost__duration .boost__duration--second-span {
-    justify-self: flex-start;
-}
-
-@media screen and (max-width: 720px) {
-    .boost__duration .boost__duration--second-span {
-        justify-self: center;
-    }
-}
-
-.boost__duration .dowloads-per-day {
-    font-size: 14px;
-}
-
-.boost__duration .approx-downloads {
-    font-size: 16px;
 }
 
 /* Card */
@@ -993,7 +947,6 @@ header .header {
 
 .submit-button {
     cursor: pointer;
-    padding: 30px 60px 25px 60px;
     background: url(../images/button.png) no-repeat center;
     background-size: contain;
     font-size: 20px;
@@ -1140,12 +1093,12 @@ header .header {
 
 .airpod-right {
     top: 250px;
-    right: 50px;
+    right: 0;
 }
 
 .airpod-left {
     top: 1150px;
-    left: 50px;
+    left: 0;
 }
 
 @media screen and (min-width: 1520px) {
