@@ -53,10 +53,12 @@ header .header {
 .header__logout a {
     text-transform: uppercase;
     cursor: pointer;
+    transition: .2s;
 }
 
 .header__logout a:hover {
-    color: #ffffffab;
+    color: #fff;
+    font-size: 1.04em;
 }
 
 /* Main */
@@ -136,12 +138,6 @@ header .header {
     }
 }
 
-@media screen and (max-width: 530px) {
-    .title-header img {
-        margin-top: 0;
-    }
-}
-
 .title-header__text {
     display: flex;
     flex-direction: column;
@@ -152,6 +148,7 @@ header .header {
 @media screen and (max-width: 1074px) {
     .title-header__text {
         margin-top: 25px;
+        margin-bottom: 25px;
         margin-left: 0;
     }
 }
@@ -268,15 +265,21 @@ header .header {
 }
 
 .title-form textarea {
+    padding-top: 20px;
+}
+
+.title-form textarea,
+.title-form input,
+.title-form select {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     border: 1px solid var(--input-border);
     border-radius: 15px;
     background-color: var(--input-gray);
     width: 100%;
+    height: 60px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 20px;
     line-height: 20px;
 
     overflow: hidden;
@@ -284,14 +287,18 @@ header .header {
 }
 
 @media screen and (max-width: 500px) {
-    .title-form textarea {
+    .title-form textarea,
+    .title-form input,
+    .title-form select {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .title-form textarea {
+    .title-form textarea,
+    .title-form input,
+    .title-form select {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -311,25 +318,37 @@ header .header {
 }
 
 .title-form textarea,
-.title-form textarea::placeholder {
+.title-form textarea::placeholder,
+.title-form input,
+.title-form input::placeholder,
+.title-form select {
     font-size: 22px;
     font-weight: 400;
 }
 
 @media screen and (max-width: 920px) {
-
     .title-form textarea,
-    .title-form textarea::placeholder {
+    .title-form textarea::placeholder,
+    .title-form input,
+    .title-form input::placeholder,
+    .title-form select {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 500px) {
-
     .title-form textarea,
-    .title-form textarea::placeholder {
+    .title-form textarea::placeholder,
+    .title-form input,
+    .title-form input::placeholder,
+    .title-form select {
         font-size: 18px;
     }
+}
+
+.title-form select,
+.title-form input {
+    margin-bottom: 15px;
 }
 
 .title-form span {
@@ -1052,7 +1071,17 @@ header .header {
 }
 
 .background__rainbow img.rainbow-second {
-    top: 1500px;
+    top: 1000px;
+}
+
+.background__rainbow img.rainbow-third {
+    top: 2300px;
+}
+
+@media screen and (min-width: 1620px) {
+    .background__rainbow img.rainbow-third {
+        top: 2300px;
+    }
 }
 
 .background-sun {
@@ -1119,6 +1148,7 @@ header .header {
     width: 100%;
     margin: auto auto;
     padding-top: 25px;
+    text-align: center;
 }
 
 @media screen and (min-width: 1200px) {

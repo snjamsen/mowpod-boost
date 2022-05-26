@@ -43,6 +43,7 @@
         <div class="background__rainbow">
             <img class="rainbow-first rellax data-rellax-speed="-7"" src="./assets/images/rainbow.png" alt=" background rainbow image">
             <img class="rainbow-second rellax data-rellax-speed="-7"" src="./assets/images/rainbow-second.png" alt="background rainbow image">
+            <img class="rainbow-third rellax data-rellax-speed="-7"" src="./assets/images/rainbow.png" alt="background rainbow image">
         </div>
         <div class="background-sun"></div>
     </div>
@@ -54,18 +55,30 @@
         </div>
     </header>
 
+    <div class="title">
+        <h1 class="rotate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">Get more IAB2.0 <br/>downloads to your podcast!</h1>
+    </div>
+
     <main>
         <div class="main container">
             <img class="airpod-right rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-right.gif" alt="airpod image">
             <img class="airpod-left rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-left.gif" alt="airpod image">
             <div class="title-header">
-                <form action="">
-                    <label for="title-form__input-rss" class="orange-text">RSS Feed Link</label>
-                    <div>
-                        <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" maxlength="74"  placeholder="Enter RSS Feed Link" required></textarea>
-                        <span class="title-form__input-rss--display"></span>
-                    </div>
-                </form>
+                <div class="title-form">
+                    <form action=" ? " method="get">
+                        <label for="title-form__input-rss" class="orange-text">RSS Feed Link</label>
+                        <input type="url" class="title-form__input-rss" id="title-form__input-rss" name="rss" placeholder="https://example.com/your-pdocast-url/" pattern="https://.*" size="30" required>
+                        <label for="title-form__input-episode" class="orange-text">Episode</label>
+                        <select class="title-form__input-episode" id="title-form__input-episode" name="episode" required>
+                            <option value="Karaoke from around the world"></option>
+                            <option value="Karaoke goes grunge">
+                            <option value="Pop back into the 80s">
+                            <option value="Bowling for pop punk with Jaret Reddick">
+                            <option value="Disney karaoke, fnk style">
+                        </select>
+                    </form>
+                </div>
+                
                 <!-- Insert preview image below -->
                 <img class="podcast-preview" src="./assets/images/podcast-preview-img.png" alt="podcast preview">
                 <div class="title-header__text">
@@ -84,22 +97,23 @@
                         <span>This week, we (colectively) took a vacation to travel the world and sign songs from the far reaches of the planet.</span>
                     </div>
                 </div>
+                <div class="title-form">
+                    <form action=" ? " method="get">
+                        <label for="title-form__input-title" class="orange-text">Title</label>
+                        <div>
+                            <textarea class="title-form__input-title" id="title-form__input-title" name="title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
+                            <span class="title-form__input-title--display">0/40</span>
+                        </div>
+                        <label for="title-form__input-subtitle" class="orange-text">Subtitle</label>
+                        <div>
+                            <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="subtitle" maxlength="111" onkeyup="subtitleInput(this)" placeholder="Enter podcast subtitle" required></textarea>
+                            <span class="title-form__input-subtitle--display">0/111</span>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class="title-form">
-                <form>
-                    <label for="title-form__input-title" class="orange-text">Title</label>
-                    <div>
-                        <textarea class="title-form__input-title" id="title-form__input-title" name="title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
-                        <span class="title-form__input-title--display">0/40</span>
-                    </div>
-                    <label for="title-form__input-subtitle" class="orange-text">Subtitle</label>
-                    <div>
-                        <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="subtitle" maxlength="111" onkeyup="subtitleInput(this)" placeholder="Enter podcast subtitle" required></textarea>
-                        <span class="title-form__input-subtitle--display">0/111</span>
-                    </div>
-                </form>
-            </div>
+            
 
             <div class="boost">
                 <div class="boost__container">
