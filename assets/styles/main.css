@@ -1068,9 +1068,33 @@ header .header {
     top: 0;
 }
 
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 520px) {
+    .background__rainbow img.rainbow-first {
+        top: -15px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .background__rainbow img.rainbow-first {
+        top: -30px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
     .background__rainbow img.rainbow-first {
         top: -50px;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .background__rainbow img.rainbow-first {
+        top: -60px;
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    .background__rainbow img.rainbow-first {
+        top: -90px;
     }
 }
 
