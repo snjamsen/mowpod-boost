@@ -11,7 +11,25 @@ jQuery(document).ready(function($) {
   $('.burgermenu-open, .burgermenu-close').on('click', function() {
     $('.burgermenu').toggleClass('active');
   });
-})
+});
+
+
+// Episodes dropdown list
+function show_list() {
+  var episodes = document.getElementById("episodes_id");
+
+  if (episodes.style.display == "block") {
+      episodes.style.display = "none";
+  } else {
+      episodes.style.display = "block";
+  }
+};
+window.onclick = function (event) {
+  if (!event.target.matches('.dropdown_button')) {
+      document.getElementById('episodes_id')
+          .style.display = "none";
+  }
+};
 
 
 /* Boost calculate */
