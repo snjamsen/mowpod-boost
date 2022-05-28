@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css"/>
     <link rel="preload" as="image" href="./assets/images/rainbow.png"/>
     <link rel="preload" as="image" href="./assets/images/gifs/computer.gif"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -180,7 +181,7 @@
                     </div>
                 </div>
                 <div class="card__login">
-                    <form action="" class="card-input--login">
+                    <form action=" ? " method="post" class="card-input--login">
                         <div class="card-input--mail">
                             <label for="user_login">Email address</label>
                             <input type="email" name="login" id="user_login" placeholder="email" maxlength="25" required>
@@ -196,14 +197,18 @@
             <div class="submit-boost">
                 <h1>Total to be billed: <span class="boost-sum orange-text"><br/>$400</span></h1>
                 <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
-                <div class="agree-terms">
-                    <div class="agree-terms--checkbox">
-                        <input type="checkbox" name="" id="agree-terms--checkbox" value="1">
-                        <label for="agree-terms--checkbox"></label>
+                <form class="agree-terms" action=" ? " method="POST">
+                    <div class="checkbox--container">
+                        <span>I understand the terms of use</span>
+                        <div class="agree-terms--checkbox">
+                            <input type="checkbox" name="agree-terms" id="agree-terms--checkbox" value="1" required>
+                            <label for="agree-terms--checkbox"></label>
+                        </div>
                     </div>
-                    <span>I understand the terms of use</span>
-                </div>
-                <a href="./thank-you.html"><input class="submit-boost--button submit-button" type="submit" value="Boost now"></a>
+                    <div class="g-recaptcha" data-sitekey="your_site_key" data-theme="dark"></div>
+                    <input  type="submit" class="submit-boost--button submit-button" onclick="location.href='thank-you.html';" value="Boost now">
+                </form>
+                
             </div>
         </div>
     </main>
@@ -325,6 +330,7 @@
             </div>
         </div>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
