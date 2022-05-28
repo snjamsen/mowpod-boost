@@ -250,3 +250,43 @@ footer.footer--login {
         display: none;
     }
 }
+
+.background__rainbow--image.rainbow--first.login--rainbow {
+    top: -300px;
+}
+
+@media screen and (min-width: 390px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -280px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -220px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -170px;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -140px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -200px;
+    }
+}
+
+@media screen and (min-width: 2320px) {
+    .background__rainbow--image.rainbow--first.login--rainbow {
+        top: -260px;
+    }
+}
