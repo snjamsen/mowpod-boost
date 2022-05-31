@@ -1,0 +1,197 @@
+/* List page styles */
+
+.list-page {
+    display: flex;
+}
+
+.list-page.title input {
+    font-size: 16px;
+
+    min-width: 260px;
+    margin: 30px auto;
+}
+
+@media screen and (min-width: 1020px) {
+    .list-page.title input {
+        font-size: 18px;
+    
+        min-width: 270px;
+        margin: 50px auto;
+    }
+}
+
+/* .header-list.container,
+.main-list.container {
+    max-width: 1340px;
+} */
+
+main .campaigns {
+    padding: 15px 0 10px;
+}
+
+@media screen and (min-width: 920px) {
+    main .campaigns {
+        padding-top: 20px;
+    }
+}
+
+.campaigns--span {
+    display: inline-block;
+    font-size: 20px;
+
+    padding-left: 25px;
+}
+
+@media screen and (min-width: 720px) {
+    .campaigns--span {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .campaigns--span {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .campaigns--span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .campaigns--span {
+        padding-left: 50px;
+    }
+}
+
+.campaigns__list .campaigns__list__podcast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px;
+}
+
+@media screen and (min-width: 720px) {
+    .campaigns__list .campaigns__list__podcast {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .campaigns__list .campaigns__list__podcast {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .campaigns__list .campaigns__list__podcast {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+.campaigns__list>.campaigns__list__podcast:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.campaigns__list__podcast img {
+    border-radius: 15px;
+
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 1020px) {
+    .campaigns__list__podcast img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.campaigns__list__podcast--description {
+    width: 100%;
+    margin-left: 25px;
+}
+
+.campaigns__list__podcast--description h5 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1020px) {
+    .campaigns__list__podcast--description h5 {
+        font-size: 20px;
+    }
+}
+
+.campaigns__list__podcast--description p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 1020px) {
+    .campaigns__list__podcast--description p {
+        font-size: 18px;
+    }
+}
+
+.campaigns__list__podcast .campaigns__list__podcast--prog,
+.campaigns__list__podcast .campaigns__list__podcast--comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 140px;
+    border-radius: 25px;
+    height: 40px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.campaigns__list__podcast .campaigns__list__podcast--prog,
+.campaigns__list__podcast .campaigns__list__podcast--comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 140px;
+    border-radius: 25px;
+    height: 40px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1120px) {
+    .campaigns__list__podcast .campaigns__list__podcast--prog,
+    .campaigns__list__podcast .campaigns__list__podcast--comp {
+        min-width: 160px;
+        height: 42px;
+    
+        font-size: 16px;
+    }
+}
+
+.campaigns__list__podcast--prog {
+    background-color: #1998c4;
+}
+
+.campaigns__list__podcast--comp {
+    background-color: #70b525;
+}
+
+.rainbow-list.rainbow--second {
+    display: none;
+}
+.rainbow-list.rainbow--third {
+    display: none;
+}
