@@ -1071,7 +1071,7 @@ header .header {
 
 .backgrounds--filter::after {
     content: '';
-    background-color: rgba(55, 55, 55, 0.54);
+    background-color: rgba(20, 20, 20, 0.54);
     /* filter: contrast(0.5); */
     position: fixed;
 
@@ -1268,23 +1268,39 @@ header .header {
 }
 
 .airpod-right {
-    top: 550px;
+    top: 20%;
     right: 0;
 }
 
 .airpod-left {
-    top: 1750px;
+    top: 70%;
     left: 0;
+}
+
+@media screen and (min-width: 1320px) {
+    .airpod-right {
+        right: -80px;
+    }
+    .airpod-left {
+        left: -80px;
+    }
 }
 
 @media screen and (min-width: 1520px) {
     .airpod-right {
-        top: 650px;
-        right: 250px;
+        right: -150px;
     }
     .airpod-left {
-        top: 1550px;
-        left: 250px;
+        left: -150px;
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .airpod-right {
+        right: -220px;
+    }
+    .airpod-left {
+        left: -220px;
     }
 }
 
@@ -1379,7 +1395,6 @@ form input::placeholder {
         font-size: 22px;
     }
 } 
-
 
 .episodes-list::before {
     position: absolute;
@@ -1485,16 +1500,12 @@ form input::placeholder {
 
 .chat-container {
     position: absolute;
-    right: 50px;
-    bottom: -100px;
+    right: 0;
+    bottom: -110px;
 }
 
-.chat-container img {
-    width: 200px;
-}
-
-@media screen and (min-width: 920px) {
-    .chat-container img {
-        width: 220px;
+@media screen and (min-width: 520px) {
+    .chat-container {
+        bottom: -120px;
     }
-} 
+}
