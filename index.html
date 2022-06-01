@@ -39,7 +39,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-
+    <div class="preloader"><img src="./assets/images/mowpod-boost-logo.png" alt="logotype"></div>
     <div class="backgrounds">
         <div class="background__rainbow">
             <div class="background__rainbow--image rainbow--first rellax data-rellax-speed="-7""></div>
@@ -48,18 +48,15 @@
         </div>
         <div class="background-sun"></div>
     </div>
-
     <header>
         <div class="header container">
-            <img class="heder--logo" src="./assets/images/mowpod-boost-logo.png" alt="mowpod boost logotype">
+            <a href="./list.html"><img class="heder--logo" src="./assets/images/mowpod-boost-logo.png" alt="mowpod boost logotype"></a>
             <div class="header__logout"><a href="./login.html">Logout</a></div>
         </div>
     </header>
-
     <div class="boost-page title">
         <h1 class="rotate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">Get more IAB2.0 <br/>downloads to your podcast!</h1>
     </div>
-
     <main>
         <div class="main container">
             <img class="airpod-right rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-right.gif" alt="airpod image">
@@ -75,16 +72,16 @@
                                 onclick="show_list()">
                                 Karaoke from around the world
                             </a>
-                            <div id="episodes_id" class="episodes">
-                                <li><a href="">Pop back into the 80s</a></li>
-                                <li><a href="">Bowling for pop punk with Jaret Reddick</a></li>
-                                <li><a href="">Karaoke goes grunge</a></li>
-                                <li><a href="">Disney karaoke, fnk style</a></li>
-                            </div>
+                            <nav id="episodes_id" class="episodes">
+                                <!-- Example list -->
+                                <li><a href="#">Pop back into the 80s</a></li>
+                                <li><a href="#">Bowling for pop punk with Jaret Reddick</a></li>
+                                <li><a href="#">Karaoke goes grunge</a></li>
+                                <li><a href="#">Disney karaoke, fnk style</a></li>
+                            </nav>
                         </div>
                     </form>
                 </div>
-                
                 <div class="episode-description">
                     <img class="episode-description--img" src="./assets/images/podcast-preview-img.png" alt="podcast preview">
                     <div class="episode-description__text">
@@ -100,9 +97,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="title-form title-form-text">
-                    <form action=" ? " method="get">
+                    <form action=" ? " method="POST">
                         <label for="title-form__input-title" class="orange-text">Title</label>
                         <div>
                             <textarea class="title-form__input-title" id="title-form__input-title" name="title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
@@ -116,9 +112,6 @@
                     </form>
                 </div>
             </div>
-
-            
-
             <div class="boost">
                 <div class="boost__container">
                     <div class="boost__counter">
@@ -129,7 +122,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="card">
                 <h3>Payment information</h3>
                 <div class="card__form">
@@ -176,7 +168,7 @@
                         </div>
                         <div class="card-input--zip">
                             <label for="user_zip-code">ZIP Code</label>
-                            <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" maxlength="6" required>
+                            <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" minlength="5" maxlength="6" required>
                         </div>
                     </div>
                 </div>
@@ -188,12 +180,11 @@
                         </div>
                         <div class="card-input--password">
                             <label for="user_password">Password</label>
-                            <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" maxlength="64" required>
+                            <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" minlength="6" maxlength="64" required>
                         </div>
                     </form>
                 </div>
             </div>
-
             <div class="submit-boost">
                 <h1>Total to be billed: <span class="boost-sum orange-text"><br/>$400</span></h1>
                 <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
@@ -201,20 +192,17 @@
                     <div class="checkbox--container">
                         <span>I understand the terms of use</span>
                         <div class="agree-terms--checkbox">
-                            <input type="checkbox" name="agree-terms" id="agree-terms--checkbox" value="1" required>
+                            <input type="checkbox" name="agree-terms" id="agree-terms--checkbox" value="check" required>
                             <label for="agree-terms--checkbox"></label>
                         </div>
                     </div>
                     <div class="g-recaptcha" data-sitekey="your_site_key" data-theme="dark"></div>
                     <input  type="submit" class="submit-boost--button submit-button" onclick="location.href='thank-you.html';" value="Boost now">
                 </form>
-                
             </div>
         </div>
     </main>
-
     <div class="d-line"></div>
-
     <footer>
         <div class="container">
             <div class="row">

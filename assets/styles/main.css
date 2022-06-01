@@ -13,6 +13,37 @@
     color: var(--orange);
 }
 
+/* Preloader */
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    background-image: url(../images/scratches.png);
+    background-size: 50%;
+    background-color: var(--background-color);
+    transition: opacity 400ms ease-in-out, visibility 0s 500ms;
+    overflow: hidden;
+  }
+
+.show-preloader {
+    visibility: visible;
+    opacity: 1;
+}
+
+.preloader img {
+    width: 150px;
+    height: auto;
+}
+
 /* Header */
 
 header .header {
@@ -1128,13 +1159,13 @@ header .header {
     .background__rainbow--image {
         background-size: 100%;
 
-        min-height: 420px;
+        min-height: 460px;
     }
 }
 
 @media screen and (min-width: 1520px) {
     .background__rainbow--image {
-        min-height: 520px;
+        min-height: 540px;
     }
 }
 
@@ -1252,14 +1283,14 @@ header .header {
     left: 0;
 }
 
-@media screen and (min-width: 1320px) {
+/* @media screen and (min-width: 1320px) {
     .airpod-right {
         right: -80px;
     }
     .airpod-left {
         left: -80px;
     }
-}
+} */
 
 /* @media screen and (min-width: 1520px) {
     .airpod-right {
@@ -1460,7 +1491,7 @@ form input::placeholder {
 
     padding: 10px;
 
-    transition: .15s;
+    transition: .2s;
 }
 
 .episodes li a:hover {
