@@ -273,3 +273,11 @@ main .campaigns {
 .rainbow-list.rainbow--third {
     display: none;
 }
+
+.main-list .airpod-right {
+    top: 30%;
+}
+
+.main-list .airpod-left {
+    top: 80%;
+}

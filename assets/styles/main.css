@@ -1261,40 +1261,31 @@ header .header {
 
 .airpod-right {
     top: 20%;
-    right: 0;
+    right: 15px;
 }
 
 .airpod-left {
     top: 70%;
-    left: 0;
+    left: 15px;
 }
 
-/* @media screen and (min-width: 1320px) {
+@media screen and (min-width: 520px) {
     .airpod-right {
-        right: -80px;
+        right: 5%;
     }
     .airpod-left {
-        left: -80px;
-    }
-} */
-
-/* @media screen and (min-width: 1520px) {
-    .airpod-right {
-        right: -150px;
-    }
-    .airpod-left {
-        left: -150px;
+        left: 5%;
     }
 }
 
-@media screen and (min-width: 1720px) {
+@media screen and (min-width: 1520px) {
     .airpod-right {
-        right: -220px;
+        right: 10%;
     }
     .airpod-left {
-        left: -220px;
+        left: 10%;
     }
-} */
+}
 
 /* Title */
 
