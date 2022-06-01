@@ -2,6 +2,20 @@
 
 .list-page {
     display: flex;
+
+    margin-top: 65px;
+}
+
+@media screen and (min-width: 400px) {
+    .list-page {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .list-page {
+        margin-top: 80px;
+    }
 }
 
 .list-page.title input {

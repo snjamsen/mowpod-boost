@@ -5,11 +5,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    margin: 65px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 501px) {
     .thank-you-title {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 }
 
@@ -105,7 +107,7 @@
     }
 }
 
-.background__rainbow--image.rainbow--first.thank-you--rainbow {
+/* .background__rainbow--image.rainbow--first.thank-you--rainbow {
     top: -260px;
 }
 
@@ -143,4 +145,4 @@
     .background__rainbow--image.rainbow--first.thank-you--rainbow {
         top: -260px;
     }
-}
+} */

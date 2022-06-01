@@ -1085,61 +1085,68 @@ header .header {
 
 .background__rainbow--image {
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 75% 50%;
+    background-size: 200%;
+    background-position: center;
 
     min-width: 320px;
     width: 100%;
-    min-height: 500px;
+    min-height: 300px;
     position: absolute;
+
+    transform: rotate(30deg);
 
     overflow: hidden;
     z-index: -2;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 520px) {
     .background__rainbow--image {
-        background-position: 55% 100%;
+        background-size: 160%;
+
+        min-height: 310px;
     } 
 }
 
-@media screen and (min-width: 500px) {
-    .background__rainbow--image {
-        background-position: 100% 100%;
-    }
-}
 
-/* @media screen and (min-width: 620px) {
+ @media screen and (min-width: 720px) {
     .background__rainbow--image {
         background-size: 140%;
-        background-position: 30% 50%;
-    }
-} */
 
-@media screen and (min-width: 720px) {
-    .background__rainbow--image {
-        background-position: 80% 100%;
-    }
+        min-height: 340px;
+    } 
 }
 
-/* @media screen and (min-width: 920px) {
+@media screen and (min-width: 920px) {
     .background__rainbow--image {
         background-size: 120%;
-        background-position: 50% 40%;
-    } 
-} */
 
-@media screen and (min-width: 1120px) {
-    .background__rainbow--image {
-        background-size: 100%;
-        background-position: 50% 60%;
-    } 
+        min-height: 360px;
+    }
 }
 
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 1020px) {
     .background__rainbow--image {
-        background-size: cover;
-        min-height: 1000px;
+        background-size: 100%;
+
+        min-height: 420px;
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .background__rainbow--image {
+        min-height: 520px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .background__rainbow--image {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .background__rainbow--image {
+        min-height: 740px;
     }
 }
 
@@ -1149,13 +1156,37 @@ header .header {
     top: 0;
 }
 
-/* 
-@media screen and (min-width: 391px) {
+@media screen and (min-width: 1020px) {
     .background__rainbow--image.rainbow--first {
-        top: 0;
+        top: -20px;
     }
 }
 
+@media screen and (min-width: 1320px) {
+    .background__rainbow--image.rainbow--first {
+        top: -40px;
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .background__rainbow--image.rainbow--first {
+        top: -70px;
+    }
+}
+
+@media screen and (min-width: 1720px) {
+    .background__rainbow--image.rainbow--first {
+        top: -100px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .background__rainbow--image.rainbow--first {
+        top: -150px;
+    }
+}
+
+/* 
 @media screen and (min-width: 504px) {
     .background__rainbow--image.rainbow--first {
         top: -20px;
@@ -1286,7 +1317,7 @@ header .header {
     }
 }
 
-@media screen and (min-width: 1520px) {
+/* @media screen and (min-width: 1520px) {
     .airpod-right {
         right: -150px;
     }
@@ -1302,7 +1333,7 @@ header .header {
     .airpod-left {
         left: -220px;
     }
-}
+} */
 
 /* Title */
 
