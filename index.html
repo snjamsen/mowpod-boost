@@ -58,7 +58,7 @@
         <h1 class="rotate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">Get more IAB2.0 <br/>downloads to your podcast!</h1>
     </div>
     <main>
-        <div class="main container">
+        <form class="main container">
             <img class="airpod-right rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-right.gif" alt="airpod image">
             <img class="airpod-left rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-left.gif" alt="airpod image">
             <div class="title-header">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="title-form title-form-text">
-                    <div action=" ? " method="POST">
+                    <section>
                         <label for="title-form__input-title" class="orange-text">Title</label>
                         <div>
                             <textarea class="title-form__input-title" id="title-form__input-title" name="title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
@@ -109,7 +109,7 @@
                             <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="subtitle" maxlength="111" onkeyup="subtitleInput(this)" placeholder="Enter podcast subtitle" required></textarea>
                             <span class="title-form__input-subtitle--display">0/111</span>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="boost">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="card__login">
-                    <form action=" ? " method="post" class="card-input--login">
+                    <div class="card-input--login">
                         <div class="card-input--mail">
                             <label for="user_login">Email address</label>
                             <input type="email" name="login" id="user_login" placeholder="email" maxlength="25" required>
@@ -182,7 +182,7 @@
                             <label for="user_password">Password</label>
                             <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" minlength="6" maxlength="64" required>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="submit-boost">
@@ -200,7 +200,7 @@
                     <input  type="submit" class="submit-boost--button submit-button" onclick="location.href='thank-you.html';" value="Boost now">
                 </div>
             </div>
-        </div>
+        </form>
     </main>
     <div class="d-line"></div>
     <footer>

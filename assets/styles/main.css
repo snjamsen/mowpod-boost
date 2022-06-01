@@ -262,20 +262,6 @@ header .header {
     }
 }
 
-.title-form>div {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-
-    margin-bottom: 15px;
-}
-
-@media screen and (max-width: 920px) {
-    .title-form>div {
-        flex-wrap: wrap;
-    }
-}
-
 .title-form-text div {
     display: flex;
     flex-wrap: nowrap;
