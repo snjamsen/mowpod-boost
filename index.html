@@ -63,7 +63,7 @@
             <img class="airpod-left rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-left.gif" alt="airpod image">
             <div class="title-header">
                 <div class="title-form">
-                    <form action=" ? " method="POST">
+                    <div>
                         <label for="title-form__input-rss" class="orange-text">RSS Feed Link</label>
                         <input type="url" class="title-form__input-rss" id="title-form__input-rss" name="rss" placeholder="https://example.com/your-pdocast-url/" pattern="https://.*" size="30">
                         <label for="title-form__input-episode" class="orange-text">Episode</label>
@@ -80,7 +80,7 @@
                                 <li><a href="#">Disney karaoke, fnk style</a></li>
                             </nav>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="episode-description">
                     <img class="episode-description--img" src="./assets/images/podcast-preview-img.png" alt="podcast preview">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="title-form title-form-text">
-                    <form action=" ? " method="POST">
+                    <div action=" ? " method="POST">
                         <label for="title-form__input-title" class="orange-text">Title</label>
                         <div>
                             <textarea class="title-form__input-title" id="title-form__input-title" name="title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
@@ -109,7 +109,7 @@
                             <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="subtitle" maxlength="111" onkeyup="subtitleInput(this)" placeholder="Enter podcast subtitle" required></textarea>
                             <span class="title-form__input-subtitle--display">0/111</span>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="boost">
@@ -188,7 +188,7 @@
             <div class="submit-boost">
                 <h1>Total to be billed: <span class="boost-sum orange-text"><br/>$400</span></h1>
                 <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
-                <form class="agree-terms" action=" ? " method="POST">
+                <div class="agree-terms" action=" ? " method="POST">
                     <div class="checkbox--container">
                         <span>I understand the terms of use</span>
                         <div class="agree-terms--checkbox">
@@ -198,7 +198,7 @@
                     </div>
                     <div class="g-recaptcha" data-sitekey="your_site_key" data-theme="dark"></div>
                     <input  type="submit" class="submit-boost--button submit-button" onclick="location.href='thank-you.html';" value="Boost now">
-                </form>
+                </div>
             </div>
         </div>
     </main>
