@@ -1186,62 +1186,6 @@ header .header {
     }
 }
 
-/* 
-@media screen and (min-width: 504px) {
-    .background__rainbow--image.rainbow--first {
-        top: -20px;
-    }
-}
-
-@media screen and (min-width: 550px) {
-    .background__rainbow--image.rainbow--first {
-        top: -40px;
-    }
-}
-
-@media screen and (min-width: 620px) {
-    .background__rainbow--image.rainbow--first {
-        top: -60px;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .background__rainbow--image.rainbow--first {
-        top: -80px;
-    }
-} */
-
-/* 
-@media screen and (min-width: 820px) {
-    .background__rainbow--image.rainbow--first {
-        top: -120px;
-    }
-}
-
-@media screen and (min-width: 1020px) {
-    .background__rainbow--image.rainbow--first {
-        top: -110px;
-    }
-}
-
-@media screen and (min-width: 1420px) {
-    .background__rainbow--image.rainbow--first {
-        top: -80px;
-    }
-}
-
-@media screen and (min-width: 1921px) {
-    .background__rainbow--image.rainbow--first {
-        top: -280px;
-    }
-}
-
-@media screen and (min-width: 2320px) {
-    .background__rainbow--image.rainbow--first {
-        top: -220px;
-    }
-} */
-
 .background__rainbow--image.rainbow--second {
     background-image: url(../images/rainbow-second.png);
 
