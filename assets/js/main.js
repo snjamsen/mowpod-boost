@@ -19,9 +19,7 @@ const preloader = document.querySelector('.preloader');
 preloader.classList.add('show-preloader');
 
 window.addEventListener('load', function () {
-
     	preloader.classList.remove('show-preloader');
-
 });
 
 // Episodes dropdown list
