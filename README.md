@@ -1,2 +1,2 @@
 # mowpod-boost
-mowpod-boost pages
+https://boost-dev.mowpod.com/
